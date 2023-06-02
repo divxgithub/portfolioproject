@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;500&display=swap');
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #121212;
+    color: #FFF;
+    font-family: 'Imbue', serif;
+}
+a {
+    text-decoration: none;
+    background: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    align-items: center;
+    padding: 30px 10px;
+cursor: pointer;
+}
+.Menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.LeftMenu > h2 {
+    font-weight: 500;
+    font-size: 96px;
+}
+.LeftMenu > h4 {
+    font-weight: 100;
+    font-size: 48px;
+}
+.Menu > h4 > span {
+    font-weight: 100;
+    font-size: 48px;
+    color: #95972D;
+}
+.TheArticle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.TheArticles {
+    height: 130vh;
+}
+.TheArticles > h2 {
+    font-size: 96px;
+    text-align: center;
+    letter-spacing: 12px;
+}
+.TheArticles > h2 > span  {
+    font-size: 96px;
+    color: #95972D;
+    font-weight: 100;
+}
+.TheArticleMenu {
+    padding: 20px 30px;
+}
+.TheArticleMenu > .title > h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.TheArticleMenu > .name > span {
+    font-size: 1.5rem;
+}
+
+.contactMe {
+    text-align: center;
+
+    margin-top: 16rem;
+
+}
+.contactMe h2 {
+    font-size: 5rem;
+}
+.btn {
+    padding: 10px 40px;
+    background: #95972D;
+    font-size: 2rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.navbar {
+    position: fixed;
+    top: 0; left: -110%;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    flex-flow: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10%;
+}
+.navbar > a{
+    font-size: 6rem;
+    text-decoration: none;
+    -webkit-text-stroke: .5px rgba(255, 255, 255, .5);
+    position: relative;
+}
+#nav-toggler {
+    position: fixed;
+    top: 20px;right: 20px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    z-index: 1010;
+    font-size: 3rem;
+}
+#nav-toggler:checked::before {
+    /* content: '\f00d'; */
+    color: #FFF;
+    transition: .2s linear .2s;
+}
+#nav-toggler:checked ~ .navbar {
+    left: 0;
+}
+.named {
+    top: 20px;
+    left: 20px;
+}
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    padding: 0 20px 20px;
+}
+.box img {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .5);
+    width: 250px;
+    height: 250px;
+} 
+@media (max-width: 768px) {
+    .navbar > a {
+        font-size: 2.5rem;
+    }
+}
