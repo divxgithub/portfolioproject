@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #121212;
+    font-family: 'Imbue', serif;
+}
+.Title {
+    margin-top: 2rem;
+    padding: 10px 30px;
+    color: #FFF;
+    letter-spacing: 1.5px;
+}
+.Title  h2 {
+    color: #FFF;
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+}
+.Title h3 {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+.TheContent {
+    color: #FFF;
+    padding: 10px 30px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    line-height: 30px;
+}
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
